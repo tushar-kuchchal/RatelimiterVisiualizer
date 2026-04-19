@@ -6,6 +6,7 @@ import { RequestFlow } from './components/RequestFlow';
 import { AnalyticsChart } from './components/AnalyticsChart';
 import { ConfigPanel } from './components/ConfigPanel';
 import { StatsPanel } from './components/StatsPanel';
+import { AdUnit } from './components/AdUnit';
 
 function App() {
   const {
@@ -108,6 +109,11 @@ function App() {
         {/* Analytics Chart */}
         <div className="mt-8">
           <AnalyticsChart analytics={analyticsHistory} />
+        </div>
+
+        {/* Ad Slot */}
+        <div className="mt-8 bg-gray-800 rounded-lg p-6">
+          <AdUnit slot="0000000000" />
         </div>
 
         {/* Recent Requests Table */}
